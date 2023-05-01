@@ -1,8 +1,5 @@
 package com.example.products.ui.adapter
 
-import com.example.products.data.network.dto.ProductResponse
-
-
 class HeaderItem(brand: String) : ListItem() {
     private val brand: String
 

@@ -54,7 +54,7 @@ class ProductListFragment : Fragment(), ProductDetailClick {
                 when {
                     value.isSuccess() -> {
                         value.data?.let {
-                            Toast.makeText(requireContext(), "this th list " + it.size, Toast.LENGTH_SHORT).show()
+                            //categorizing the products to there brand name
                             val products: Map<String, List<ProductResponse>?> = toMap(it)
 
                             for (brand in products.keys) {
@@ -85,10 +85,6 @@ class ProductListFragment : Fragment(), ProductDetailClick {
                 }
             }
         }
-
-       /* binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }*/
     }
 
     private fun toMap(products: List<ProductResponse>): Map<String, MutableList<ProductResponse>> {
@@ -110,7 +106,6 @@ class ProductListFragment : Fragment(), ProductDetailClick {
     }
 
     override fun clickOnItem(data: ProductItem) {
-        Toast.makeText(requireContext(), data.getProduct().name, Toast.LENGTH_SHORT).show()
         val bundle = Bundle()
         bundle.putParcelable("product", data.getProduct())
         findNavController().navigate(R.id.action_ProductList_to_ProductDetail, bundle)

@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/ProductDetail"
-        android:name="com.example.products.ProductDetailFragment"
+        android:name="com.example.products.ui.ProductDetailFragment"
         android:label="@string/product_detail_label"
         tools:layout="@layout/product_detail">
 

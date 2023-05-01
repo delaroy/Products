@@ -45,13 +45,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
-        android:gravity="center|start"
+        android:textSize="14sp"
+        android:justificationMode="inter_word"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productImg" />
+        app:layout_constraintTop_toBottomOf="@+id/productImg"/>
 
     <TextView
         android:id="@+id/price"

@@ -1,6 +1,5 @@
 package com.example.products.ui.adapter
 
-
 abstract class ListItem {
     abstract val type: Int
 
